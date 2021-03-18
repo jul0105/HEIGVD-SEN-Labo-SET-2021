@@ -62,6 +62,45 @@ Vous découvrirez l'un des outils les plus couramment utilisés par les ingénie
 
 Pour le collecteur d'identifiants, montrez que vous avez cloné un site en indiquant son adresse web et l'interface d'utilisateur. Saisissez les informations d'identification sur votre clone local, puis cliquez le bouton de connexion. Essayez plusieurs sites comme facebook.com, twitter.com, et d'autres qui puissent vous intéresser. Faites des captures d'écran des mots de passe collectés dans vos tests avec SET.
 
+
+
+#### <u>Travail pratique</u>
+
+1. Lancer SET `sudo setoolkit`
+2. Sélectionner `1) Social-Engineering Attacks` > `2) Website Attack Vectors` > `3) Credential Harvester Attack Method`
+3. Puis, sélectionner `2) Site Cloner`
+4. Continuer en laissant l'adresse IP par défaut
+5. Entrer l'URL du site à cloner : `https://gaps.heig-vd.ch/consultation/`
+6. Accéder au site cloné sur `http://localhost/`
+
+
+
+Voici le résultat ci-dessous. On peut noter que les caractère avec accent n'ont pas été cloné correctement.
+
+![](images/gaps1.png)
+
+Lorsque la victime entre ces identifiants de connexion, l'attaquant reçoit ces informations en claire :
+
+![](images/gaps2.png)
+
+
+
+Même résultat avec Twitter en utilisant un template fournit par SET cette fois :
+
+![](images/twitter1.png)
+
+![](images/twitter2.png)
+
+
+
+Néanmoins, avec un processus de login plus complexe comme google par exemple, il n'est pas possible de récupérer le mot de passe car ce dernier est demandé sur une page différente.
+
+![](images/google1.png)
+
+Voici ce que le formulaire ci dessus envoie comme paramètre. Le nom d'utilisateur se trouve à la 3ème ligne du screenshot. 
+
+![](images/google2.png)
+
 # Exercice 2 - Créer une attaque de phishing
 
 Essayez la fonction d'attaque par phishing. C'est très facile à faire. Vous pouvez vous référer à ce lien pour plus d'informations http://www.computerweekly.com/tutorial/Social-Engineer-Toolkit-SET-tutorial-for-penetration-testers
