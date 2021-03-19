@@ -64,7 +64,7 @@ Pour le collecteur d'identifiants, montrez que vous avez cloné un site en indiq
 
 
 
-#### <u>Travail pratique</u>
+### <u>Travail pratique</u>
 
 1. Lancer SET `sudo setoolkit`
 2. Sélectionner `1) Social-Engineering Attacks` > `2) Website Attack Vectors` > `3) Credential Harvester Attack Method`
@@ -97,7 +97,7 @@ Néanmoins, avec un processus de login plus complexe comme google par exemple, i
 
 ![](images/google1.png)
 
-Voici ce que le formulaire ci dessus envoie comme paramètre. Le nom d'utilisateur se trouve à la 3ème ligne du screenshot. 
+Voici ce que le formulaire ci-dessus envoie comme paramètre. Le nom d'utilisateur se trouve à la 3ème ligne du screenshot. 
 
 ![](images/google2.png)
 
@@ -126,3 +126,96 @@ Vous avez la liberté de reproduire et d'utiliser ce matériel grâce à sa lice
 Pour cette tâche, prenez des captures d'écran de :
 
 - Vos inspections d'un en-tête de courrier électronique à partir de votre propre boîte de réception
+
+### <u>Travail pratique</u>
+
+Voici un e-mail que j'ai reçu sur ma boîte HEIG-VD et qui concerne des comptes microsoft.net (Analyse en bas) :
+
+```
+Received: from EIMAIL02.einet.ad.eivd.ch (10.192.41.72) by
+ EIMAIL01.einet.ad.eivd.ch (10.192.41.71) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2176.2
+ via Mailbox Transport; Thu, 18 Mar 2021 07:22:29 +0100
+Received: from EIMAIL02.einet.ad.eivd.ch (10.192.41.72) by
+ EIMAIL02.einet.ad.eivd.ch (10.192.41.72) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2176.2; Thu, 18 Mar 2021 07:22:28 +0100
+Received: from mail01.heig-vd.ch (10.192.222.28) by EIMAIL02.einet.ad.eivd.ch
+ (10.192.41.72) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2176.2 via Frontend
+ Transport; Thu, 18 Mar 2021 07:22:28 +0100
+X-ASG-Debug-ID: 1616048548-1114bd1d24972f60001-qbKJvj
+Received: from nemx1a.ne.ch (nemx1a.ne.ch [148.196.30.42]) by mail01.heig-vd.ch with ESMTP id kqhTtKQQ8yFrt1cK (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO); Thu, 18 Mar 2021 07:22:28 +0100 (CET)
+X-Barracuda-Envelope-From: MehmetajEli@rpn.ch
+X-Barracuda-Effective-Source-IP: nemx1a.ne.ch[148.196.30.42]
+X-Barracuda-Apparent-Source-IP: 148.196.30.42
+Received: from rpnedge1.rpn.ch ([157.26.1.37])
+	by nemx1.ne.ch with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <MehmetajEli@rpn.ch>)
+	id 1lMm34-0002Fu-TX; Thu, 18 Mar 2021 07:22:24 +0100
+Received: from rpn3cmbx1.rpn.ch (157.26.0.55) by RPNEDGE1.rpn.ch (157.26.1.37)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id 15.1.2176.2; Thu, 18 Mar
+ 2021 07:22:21 +0100
+Received: from rpncmbx1.rpn.ch (157.26.0.35) by rpn3cmbx1.rpn.ch (157.26.0.55)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.2176.2; Thu, 18
+ Mar 2021 07:22:21 +0100
+Received: from rpncmbx1.rpn.ch ([10.26.1.35]) by rpncmbx1.rpn.ch
+ ([10.26.1.35]) with mapi id 15.01.2176.009; Thu, 18 Mar 2021 07:22:21 +0100
+From: Mehmetaj Eliott <MehmetajEli@rpn.ch>
+To: "Notice@microsoft.net" <Notice@microsoft.net>
+Subject: Microsoft Account Team
+Thread-Topic: Microsoft Account Team
+X-ASG-Orig-Subj: Microsoft Account Team
+Thread-Index: AdcbuuzOvfgs0InuQ4WwOkt1fhaPkAAABhSQAAAAY0AAAAA4gAAAADUQAAAALQAAAACfUAAAADWQAADDCiAAAAAfkAAAAC1QAAAAQXAAAAAXIAAAABsgAAAAGrAAAAAacAAAABygAAAAHqAAAAAckAAAABsgAAAAHoAAAAAgsAAAAB5wAAAAHmAAAAAgwAAAAB6AAAAAH+AAAAAgQAAAAB+gAAAAIGAAAAAhIAAAACOwAAAAIuAAAAAjoAAAACOQAAAAJVAAAAAl4AAAACQQAAAAJgAAAAAnwAAAACaAAAAAKBAAAAAo0AAAAChgAAAAKiAAAAAosA==
+Date: Thu, 18 Mar 2021 06:22:21 +0000
+Message-ID: <bac1e9ae6c4745c38bc21f28d4a13f74@rpn.ch>
+Accept-Language: fr-FR, fr-CH, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [157.26.1.46]
+Content-Type: multipart/alternative;
+	boundary="_000_bac1e9ae6c4745c38bc21f28d4a13f74rpnch_"
+MIME-Version: 1.0
+X-Originating-IP: 157.26.1.37
+X-EtatdeNeuchatel-Domain: rpn.ch
+X-EtatdeNeuchatel-Username: 157.26.1.37
+Authentication-Results: ne.ch; auth=pass smtp.auth=157.26.1.37@rpn.ch
+X-EtatdeNeuchatel-Outgoing-Class: ham
+X-EtatdeNeuchatel-Outgoing-Evidence: Combined (0.50)
+X-Recommended-Action: accept
+X-Report-Abuse-To: spam@nemx1.ne.ch
+X-Barracuda-Connect: nemx1a.ne.ch[148.196.30.42]
+X-Barracuda-Start-Time: 1616048548
+X-Barracuda-Encrypted: ECDHE-RSA-AES256-GCM-SHA384
+X-Barracuda-URL: https://quarantine.heig-vd.ch:443/cgi-mod/mark.cgi
+X-Virus-Scanned: by bsmtpd at heig-vd.ch
+X-Barracuda-Scan-Msg-Size: 3218
+X-Barracuda-BRTS-Status: 1
+X-Barracuda-Spam-Score: 0.20
+X-Barracuda-Spam-Status: No, SCORE=0.20 using global scores of TAG_LEVEL=1000.0 QUARANTINE_LEVEL=4.0 KILL_LEVEL=5.0 tests=BSF_SC0_SA983, HTML_MESSAGE
+X-Barracuda-Spam-Report: Code version 3.2, rules version 3.2.3.88604
+	Rule breakdown below
+	 pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	0.00 HTML_MESSAGE           BODY: HTML included in message
+	0.20 BSF_SC0_SA983          Custom Rule BSF_SC0_SA983
+Return-Path: MehmetajEli@rpn.ch
+X-MS-Exchange-Organization-Network-Message-Id: 2bfc3fcc-5fa7-4050-925e-08d8e9d634b8
+X-MS-Exchange-Organization-AVStamp-Enterprise: 1.0
+X-MS-Exchange-Organization-AuthSource: EIMAIL02.einet.ad.eivd.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.1742262
+X-MS-Exchange-Processed-By-BccFoldering: 15.01.2176.009
+```
+
+L'e-mail semble venir de `rpn.ch`. La première adresse IP associé (`157.26.0.35`) semble valide et est attribué au *Service informatique de l'Entite neuchateloise*.
+
+Le `Return-Path:` indique la même adresse que l’expéditeur ce qui pourrait indique que ce n'est pas du spam.
+
+Le système de filtrage de l'HEIG-VD indique un spam-score de 0.2 (`X-Barracuda-Spam-Score: 0.20`) ce qui semble être bas.
+
+En analysant l'en-tête, cet e-mail ne semble pas être du spam. Néanmoins, le contenu de ce dernier contient principalement un lien dirigent vers un site douteux tout en indiquant que si on ne valide pas son compte avec le lien, notre compte Teams sera désactivé. Cela laisse pensé que c'est bien un e-mail malveillant.
